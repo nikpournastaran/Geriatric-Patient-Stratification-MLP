@@ -25,7 +25,7 @@ This repository contains a specialized machine learning framework designed to pr
 - **Deployment:** Streamlit, Ngrok (for secure tunneling).
 
 ##  Dashboard Preview
-![Clinical Dashboard](Screenshot_22.png)
+![Clinical Dashboard](Screenshot (22).png)
 
 ##  How to Run
 1. Clone the repository: `git clone https://github.com/yourusername/project-name.git`
