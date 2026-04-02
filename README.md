@@ -26,7 +26,7 @@ This repository contains a specialized machine learning framework designed to pr
 
 ##  Dashboard Preview
 *(Insert your high-quality screenshot here using the syntax below)*
-![Clinical Dashboard](Screenshot_22.png)
+![Clinical Dashboard](Screenshot_22.png) 
 
 ##  How to Run
 1. Clone the repository: `git clone https://github.com/yourusername/project-name.git`
