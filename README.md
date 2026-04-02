@@ -29,6 +29,12 @@ Patients were segmented into Low, Medium, and High-risk tiers. This stratificati
 - **Architecture**: Optimized with Adam Optimizer and Cross-Entropy Loss.
 - **Class Balancing**: Integrated `class_weight='balanced'` to address inherent skewness in clinical datasets, ensuring the model identifies high-need patients accurately.
 
+### 🔄 Advanced Data Imbalance Handling (SMOTE)
+To mitigate **Majority Class Bias**, I implemented **SMOTE (Synthetic Minority Over-sampling Technique)**.
+* **Before SMOTE:** Imbalanced distribution {Class 2: 297, Class 3: 169, Class 1: 105}
+* **After SMOTE:** Balanced distribution {Class 1: 297, Class 2: 297, Class 3: 297}
+This led to a significant improvement in **Recall** for minority clinical categories, ensuring the model remains sensitive to all patient risk profiles.
+
 ## 📊 Key Performance Insights (Clinical Evaluation)
 The system was evaluated using medical-grade metrics, focusing on Recall for high-utilization classes to minimize false negatives in patient care.
 
