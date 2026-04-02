@@ -17,7 +17,7 @@ This project delivers an end-to-end AI-driven clinical decision-support system d
 - **Data Refinement**: Handled complex survey categories (Refused/Not Asked) to ensure high-fidelity model inputs.
 - **Scaling**: Implemented a robust StandardScaler within an automated pipeline to maintain feature consistency and prevent data leakage.
 
-### 2. Statistical Validation (The Mathematical Foundation)
+### 2. Statistical Validation 
 Consistent with my background in Mathematical Statistics, I performed rigorous Chi-Square Hypothesis Testing to validate correlations between socio-demographic factors and healthcare access.  
 **Outcome**: Confirmed statistically significant relationships (\(p < 0.05\)), providing a formal basis for the neural network's feature selection.
 
