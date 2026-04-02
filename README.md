@@ -1,62 +1,42 @@
-# Predictive Intelligence for Geriatric Healthcare Access & Patient Stratification
+# Geriatric Patient Risk Stratification: An AI-Driven Approach
 
-📌 **Executive Summary**  
-This project delivers an end-to-end AI-driven clinical decision-support system designed to predict healthcare utilization (frequency of doctor visits) among geriatric patients. By integrating Mathematical Statistics with Deep Learning (MLP), the system identifies high-risk patient segments. This enables healthcare providers to optimize resource allocation, improve prognostic accuracy, and ensure timely interventions for elderly populations.
+![Python](https://img.shields.io/badge/Python-3.12-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-orange.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red.svg)
 
-## 🛠️ Tech Stack & Architecture
-- **Deep Learning**: PyTorch (Multi-Layer Perceptron).
-- **Machine Learning**: Random Forest, LightGBM, Logistic Regression (Scikit-Learn).
-- **Statistical Validation**: SciPy (Chi-Square Analysis, Hypothesis Testing).
-- **Data Engineering**: Pandas, NumPy, SQL-based logic for clinical data optimization.
-- **Workflow**: Automated AI Pipelines for production-ready inference.
+## Overview
+This repository contains a specialized machine learning framework designed to predict and stratify healthcare utilization risks among geriatric populations. Developed with a focus on clinical integration, the project leverages **Deep Learning (MLP)** and **Ensemble Methods** to provide actionable insights for hospitals like **Humanitas**, aiming to optimize patient care and resource allocation.
 
-## 🧬 Methodology: The Clinical Data Science Lifecycle
+##  Key Features
+- **Hybrid Modeling:** Comparison between **Random Forest (Balanced)** and a custom **PyTorch Multi-Layer Perceptron (MLP)**.
+- **Automated Pipeline:** An end-to-end workflow (Scikit-learn Pipeline) for seamless data preprocessing and real-time inference.
+- **Clinical Dashboard:** A live **Streamlit** application providing a user-friendly interface for healthcare providers.
+- **Advanced Preprocessing:** Implementation of **SMOTE** for handling imbalanced medical datasets and custom **Feature Engineering** (Clinical Risk Index).
 
-### 1. Clinical Data Modeling & Feature Engineering
-- Developed a custom Clinical Risk Index by synthesizing multifaceted health metrics including physical, mental, and dental health status.
-- **Data Refinement**: Handled complex survey categories (Refused/Not Asked) to ensure high-fidelity model inputs.
-- **Scaling**: Implemented a robust StandardScaler within an automated pipeline to maintain feature consistency and prevent data leakage.
+##  Methodology 
+1. **Exploratory Data Analysis (EDA):** Identifying non-linear correlations between physical health, sleep patterns, and medical visits.
+2. **Model Training:** - **MLP:** Trained for 100 epochs using **Adam Optimizer** and **Cross-Entropy Loss**.
+   - **RF:** Optimized with class weighting to handle minority risk groups.
+3. **Evaluation:** Detailed analysis via **Confusion Matrices** and **Classification Reports** to ensure clinical safety and reliability.
 
-### 2. Statistical Validation 
-Consistent with my background in Mathematical Statistics, I performed rigorous Chi-Square Hypothesis Testing to validate correlations between socio-demographic factors and healthcare access.  
-**Outcome**: Confirmed statistically significant relationships (\(p < 0.05\)), providing a formal basis for the neural network's feature selection.
+##  Technical Stack
+- **Backend:** Python, PyTorch, Scikit-learn, Pandas, NumPy.
+- **Visualization:** Matplotlib, Seaborn.
+- **Deployment:** Streamlit, Ngrok (for secure tunneling).
 
-### 3. Patient Stratification (Risk-Based Triage)
-Patients were segmented into Low, Medium, and High-risk tiers. This stratification logic serves as the engine for the Decision-Support Tool, allowing clinicians to prioritize patients requiring urgent care.
+##  Dashboard Preview
+*(Insert your high-quality screenshot here using the syntax below)*
+![Clinical Dashboard](Screenshot_22.png)
 
-### 4. Deep Learning Implementation (MLP)
-- Implemented a 3-layer Multi-Layer Perceptron (MLP) using PyTorch.
-- **Architecture**: Optimized with Adam Optimizer and Cross-Entropy Loss.
-- **Class Balancing**: Integrated `class_weight='balanced'` to address inherent skewness in clinical datasets, ensuring the model identifies high-need patients accurately.
+##  How to Run
+1. Clone the repository: `git clone https://github.com/yourusername/project-name.git`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the dashboard: `streamlit run app.py`
 
-### 🔄 Advanced Data Imbalance Handling (SMOTE)
-To mitigate **Majority Class Bias**, I implemented **SMOTE (Synthetic Minority Over-sampling Technique)**.
-* **Before SMOTE:** Imbalanced distribution {Class 2: 297, Class 3: 169, Class 1: 105}
-* **After SMOTE:** Balanced distribution {Class 1: 297, Class 2: 297, Class 3: 297}
-This led to a significant improvement in **Recall** for minority clinical categories, ensuring the model remains sensitive to all patient risk profiles.
+##  Future Work
+- Integration of **Explainable AI (XAI)** using SHAP to interpret clinical decision paths.
+- Expansion to **Longitudinal Data** for trend-based risk forecasting.
 
-## 📊 Key Performance Insights (Clinical Evaluation)
-The system was evaluated using medical-grade metrics, focusing on Recall for high-utilization classes to minimize false negatives in patient care.
-
-| Metric     | Category 2 (Average Care) | Category 3 (High-Need) |
-|------------|---------------------------|-------------------------|
-| **Precision** | 0.56                     | 0.48                   |
-| **Recall**    | 0.85                     | 0.33                   |
-| **F1-Score**  | 0.68                     | 0.39                   |
-
-**Technical Insight**: The high recall (85%) in Category 2 demonstrates model stability, while the lower recall in Category 3 reflects the "Volatile Patient" challenge common in geriatric emergency analytics—a primary area for further RAG-based augmentation.
-
-## 🚀 Scalability & Future Roadmap
-- **SQL & Neo4j Integration**: Migrating data to a Knowledge Graph to capture multi-hop reasoning between chronic conditions.
-- **AWS Deployment**: Utilizing Amazon SageMaker for real-time model monitoring and automated CI/CD for healthcare workflows.
-- **RAG & LangChain**: Developing a Retrieval-Augmented Generation pipeline to allow clinicians to query patient summaries via Natural Language.
-
-## 📬 Contact & Collaboration
-**Nastaran Nikpour** – Junior Data Scientist | AI in Healthcare Specialist  
-- **Education**: Dual Master's in Data Science and Mathematical Statistics.  
-- **Location**: Naples, Italy (Open to Relocation).  
-- [LinkedIn: nastaran-nikpour](https://linkedin.com/in/nastaran-nikpour)  
-- [GitHub: nikpournastaran](https://github.com/nikpournastaran)  
-- Email: [nastaran_nik74@yahoo.com](mailto:nastaran_nik74@yahoo.com)  
-
-Developed with a focus on translating complex clinical data into actionable life-saving insights.
+---
+**Author:** Nastaran 
+**Affiliation:** AI & Data Science in Healthcare
