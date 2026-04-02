@@ -1,7 +1,7 @@
 # Predictive Intelligence for Geriatric Healthcare Access & Patient Stratification
 
 📌 **Executive Summary**  
-This project delivers an end-to-end AI-driven clinical decision-support system designed to predict healthcare utilization (frequency of doctor visits) among geriatric patients. By integrating Mathematical Statistics with Deep Learning (MLP), the system identifies high-risk patient segments. This enables healthcare providers like Humanitas Research Hospital to optimize resource allocation, improve prognostic accuracy, and ensure timely interventions for elderly populations.
+This project delivers an end-to-end AI-driven clinical decision-support system designed to predict healthcare utilization (frequency of doctor visits) among geriatric patients. By integrating Mathematical Statistics with Deep Learning (MLP), the system identifies high-risk patient segments. This enables healthcare providers to optimize resource allocation, improve prognostic accuracy, and ensure timely interventions for elderly populations.
 
 ## 🛠️ Tech Stack & Architecture
 - **Deep Learning**: PyTorch (Multi-Layer Perceptron).
